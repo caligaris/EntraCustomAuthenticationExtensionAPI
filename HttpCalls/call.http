@@ -1,0 +1,8 @@
+# Azure Functions Warmup the sql connection, if not call before the first request 
+# first login attempt will fail due to 2 second timeout in Entra Id Custom Authentication Extension
+
+GET http://localhost:7071/api/Warmup
+
+###
+
+
